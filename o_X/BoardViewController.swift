@@ -22,5 +22,13 @@ class BoardViewController: UIViewController {
     
     // Create additional IBActions here.
 
+    @IBAction func pushButton(sender: AnyObject) {
+        let intButton: Int = sender.tag
+        print("You pressed button number \(intButton)")
+    }
+    
+    @IBAction func logOutUser(sender: AnyObject) {
+        print("You have logged out")
+    }
 }
 
