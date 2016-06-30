@@ -12,6 +12,8 @@
 		02F782CB1D22966600E3BC29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F782C91D22966600E3BC29 /* Main.storyboard */; };
 		02F782CD1D22966600E3BC29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F782CC1D22966600E3BC29 /* Assets.xcassets */; };
 		02F782D01D22966600E3BC29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F782CE1D22966600E3BC29 /* LaunchScreen.storyboard */; };
+		3619A21B1D23E40900158DE6 /* OXGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619A21A1D23E40900158DE6 /* OXGame.swift */; };
+		3619A2211D2466E600158DE6 /* OXGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619A2201D2466E600158DE6 /* OXGameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		02F782CC1D22966600E3BC29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02F782CF1D22966600E3BC29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02F782D11D22966600E3BC29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3619A21A1D23E40900158DE6 /* OXGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OXGame.swift; sourceTree = "<group>"; };
+		3619A2201D2466E600158DE6 /* OXGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OXGameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				02F782CC1D22966600E3BC29 /* Assets.xcassets */,
 				02F782CE1D22966600E3BC29 /* LaunchScreen.storyboard */,
 				02F782D11D22966600E3BC29 /* Info.plist */,
+				3619A21A1D23E40900158DE6 /* OXGame.swift */,
+				3619A2201D2466E600158DE6 /* OXGameController.swift */,
 			);
 			path = o_X;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				02F782C81D22966600E3BC29 /* BoardViewController.swift in Sources */,
+				3619A21B1D23E40900158DE6 /* OXGame.swift in Sources */,
+				3619A2211D2466E600158DE6 /* OXGameController.swift in Sources */,
 				02F782C61D22966600E3BC29 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +294,7 @@
 				02F782D61D22966600E3BC29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

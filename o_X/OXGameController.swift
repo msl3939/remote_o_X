@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+class OXGameS {
+    static let sharedInstance = OXGameS()
+    private var currentGame:OXGame = OXGame()
+    
+    func getCurrentGame() -> OXGame {
+        return currentGame
+    }
+    func restartGame() {
+        currentGame.reset()
+    }
+    func playMove(tag: Int) {
+        currentGame.playMove(tag)
+    }
+    
+    
+}
