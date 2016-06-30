@@ -37,8 +37,8 @@
                                             <action selector="pushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yre-HR-aGK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xm5-Sx-2X6">
-                                        <rect key="frame" x="175" y="175" width="150" height="149"/>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xm5-Sx-2X6">
+                                        <rect key="frame" x="175" y="175" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
                                         <state key="normal">
@@ -51,8 +51,8 @@
                                             <action selector="pushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqR-jF-mTx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMt-vQ-UGe">
-                                        <rect key="frame" x="350" y="175" width="150" height="149"/>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMt-vQ-UGe">
+                                        <rect key="frame" x="350" y="175" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
                                         <state key="normal">
@@ -93,16 +93,6 @@
                                             <action selector="pushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2T-Sw-gBa"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbg-s9-DLq">
-                                        <rect key="frame" x="-50" y="-80" width="46" height="30"/>
-                                        <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="136" y="0.0" width="118" height="114"/>
-                                        </variation>
-                                    </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qne-Qn-cxq">
                                         <rect key="frame" x="350" y="350" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -131,8 +121,8 @@
                                             <action selector="pushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gfr-gO-NLz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMv-WF-fnC">
-                                        <rect key="frame" x="0.0" y="175" width="150" height="149"/>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMv-WF-fnC">
+                                        <rect key="frame" x="0.0" y="175" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
                                         <state key="normal">
@@ -318,6 +308,7 @@
                     </view>
                     <connections>
                         <outlet property="boardview" destination="BOL-I1-dRX" id="hTS-BS-A6s"/>
+                        <outlet property="newGameButton" destination="lxg-Ju-hLu" id="zhI-zJ-z7P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -15,6 +15,9 @@ class BoardViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
+        
+        newGameButton.hidden = true
+        
     }
     
     // Create additional IBActions here.
@@ -28,32 +31,54 @@ class BoardViewController: UIViewController {
         OXGameS.sharedInstance.restartGame()
     }
     
-    @IBAction func newgamebuttonpressed(sender: UIButton) {
+    @IBAction func newgamebuttonpressed (sender: UIButton) {
         print("New game button pressed.")
         restartGame()
+        newGameButton.hidden = true
     }
+    
 
     @IBAction func pushButton(sender: UIButton) {
         var intButton: Int = sender.tag
         print("You pressed button number \(intButton)")
         OXGameS.sharedInstance.playMove(sender.tag)
-        var buttontitle = String(OXGameS.sharedInstance.getCurrentGame().whoseTurn())
+        let buttontitle = OXGameS.sharedInstance.getCurrentGame().whoseTurn().rawValue
         sender.setTitle(buttontitle, forState: .Normal)
         sender.enabled = false
         
-        var gamestate = OXGameS.sharedInstance.getCurrentGame().state1()
+        let gamestate = OXGameS.sharedInstance.getCurrentGame().state()
         if (gamestate == OXGameState.Won)
         {
             print ("hey you won")
-            restartGame()
+            
+            let alert = UIAlertController(title: "Game Over", message: "\(buttontitle) Won", preferredStyle: UIAlertControllerStyle.Alert)
+            let dismissAction = UIAlertAction(title: "Dismiss", style: .Cancel, handler: { action in
+                self.newGameButton.hidden = false
+            })
+            
+            alert.addAction(dismissAction)
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
         }
         else if (gamestate == OXGameState.Tie)
         {
             print ("hey you tied")
-            restartGame()
+            
+            let alert = UIAlertController(title: "Game Over", message: "You Tied", preferredStyle: UIAlertControllerStyle.Alert)
+            let dismissAction = UIAlertAction(title: "Dismiss", style: .Cancel, handler: { action in
+                self.newGameButton.hidden = false
+            })
+            
+            alert.addAction(dismissAction)
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+
+            
         }
+       
         
-        
+
         
         
         

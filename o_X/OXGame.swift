@@ -59,18 +59,18 @@ class OXGame {
             (board[0] == board[3] && board[3] == board[6] && board[6] != .Empty) ||
             (board[1] == board[4] && board[4] == board[7] && board[7] != .Empty) ||
             (board[2] == board[5] && board[5] == board[8] && board[8] != .Empty) {
-                return true
+            return true
         }
         else {
-                return false
+            return false
         }
     }
     
     
-    func state1() -> OXGameState {
+    func state() -> OXGameState {
         if (gameWon() == true) {
             return OXGameState.Won
-}
+        }
         else if (turnCount() == 9)
         {
             return OXGameState.Tie
@@ -78,7 +78,7 @@ class OXGame {
         else {
             return OXGameState.inProgress
         }
-}
+    }
     
     func reset() {
         startTurn = 0
