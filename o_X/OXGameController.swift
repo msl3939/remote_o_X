@@ -21,6 +21,4 @@ class OXGameS {
     func playMove(tag: Int) {
         currentGame.playMove(tag)
     }
-    
-    
 }

@@ -46,6 +46,7 @@ class BoardViewController: UIViewController {
         sender.setTitle(buttontitle, forState: .Normal)
         sender.enabled = false
         
+        
         let gamestate = OXGameS.sharedInstance.getCurrentGame().state()
         if (gamestate == OXGameState.Won)
         {
@@ -86,6 +87,11 @@ class BoardViewController: UIViewController {
     
     @IBAction func logOutUser(sender: AnyObject) {
         print("You have logged out")
+        let storyboard = UIStoryboard(name: "OnboardingStoryboard", bundle: nil)
+        let viewController = storyboard.instantiateInitialViewController()
+        let application = UIApplication.sharedApplication()
+        let window = application.keyWindow
+        window?.rootViewController = viewController
     }
 }
 
