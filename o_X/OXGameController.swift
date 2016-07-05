@@ -21,4 +21,12 @@ class OXGameS {
     func playMove(tag: Int) {
         currentGame.playMove(tag)
     }
+    
+    func getGames(onCompletion onCompletion: ([OXGame]?, String?) -> Void) {
+        return
+    }
+    
+    
+
 }
+
