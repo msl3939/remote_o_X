@@ -23,10 +23,18 @@ class OXGameS {
     }
     
     func getGames(onCompletion onCompletion: ([OXGame]?, String?) -> Void) {
-        return
+        
+        let a = OXGame()
+        let b = OXGame()
+        
+        a.ID = 1
+        a.host = "Michelle"
+        
+        b.ID = 2
+        b.host = "Enrique"
+        
+        onCompletion([a, b], nil)
     }
     
-    
-
 }
 

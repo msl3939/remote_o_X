@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
@@ -16,6 +18,7 @@ class RegisterViewController: UIViewController {
     @IBAction func registerButtonPressed(sender: AnyObject) {
         UserController.sharedInstance.register(email: emailTextField.text!, password: passwordTextField.text!, onCompletion: {
             username, string in
+    
             if username == nil {
                 
                 let alert = UIAlertController(title: "Registration Failed", message: string!, preferredStyle: UIAlertControllerStyle.Alert)

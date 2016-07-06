@@ -17,6 +17,15 @@ class NetworkGamesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        OXGameS.sharedInstance.getGames(onCompletion: {games, error in
+            if let availGames:[OXGame] = games {
+                self.games = availGames
+                self.tableView.reloadData()
+            } else {
+                print("Error Message")
+            }
+        })
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -32,7 +41,7 @@ class NetworkGamesTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     
-    var array = ["fake info1", "fake info2", "fake info3"]
+    private var games: [OXGame] = []
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -41,17 +50,24 @@ class NetworkGamesTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return array.count
+        return games.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellIdentifier", forIndexPath: indexPath)
-        cell.textLabel?.text = String(array[indexPath.row])
+        cell.textLabel?.text = String(games[indexPath.row].host)
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print(String(indexPath.row))
+        self.performSegueWithIdentifier("networkSegue", sender: indexPath)
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let destinationVC = segue.destinationViewController as? BoardViewController {
+            destinationVC.networkMode = true
+        }
     }
     
 

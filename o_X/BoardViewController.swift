@@ -7,17 +7,29 @@ import UIKit
 
 class BoardViewController: UIViewController {
 
+    
+    func updateUI() {
+        let arrayBoard = OXGameS.sharedInstance.getCurrentGame().board
+        for subviews in boardview.subviews {
+            if let button = subviews as? UIButton {
+                button.setTitle(arrayBoard[button.tag].rawValue, forState: .Normal)
+            }
+        }
+    }
+    
+    var networkMode:Bool = false
+    
     @IBOutlet weak var boardview: UIView!
     @IBOutlet weak var newGameButton: UIButton!
     // Create additional IBOutlets here.
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        OXGameS.sharedInstance.restartGame()
         
         // Do any additional setup after loading the view, typically from a nib.
         
-        newGameButton.hidden = true
-        
+        newGameButton?.hidden = true
     }
     
     // Create additional IBActions here.
@@ -40,7 +52,6 @@ class BoardViewController: UIViewController {
 
     @IBAction func pushButton(sender: UIButton) {
         var intButton: Int = sender.tag
-        print("You pressed button number \(intButton)")
         OXGameS.sharedInstance.playMove(sender.tag)
         let buttontitle = OXGameS.sharedInstance.getCurrentGame().whoseTurn().rawValue
         sender.setTitle(buttontitle, forState: .Normal)
@@ -48,17 +59,13 @@ class BoardViewController: UIViewController {
         
         
         let gamestate = OXGameS.sharedInstance.getCurrentGame().state()
-        if (gamestate == OXGameState.Won)
-        {
-            print ("hey you won")
-            
+        if (gamestate == OXGameState.Won){
             let alert = UIAlertController(title: "Game Over", message: "\(buttontitle) Won", preferredStyle: UIAlertControllerStyle.Alert)
             let dismissAction = UIAlertAction(title: "Dismiss", style: .Cancel, handler: { action in
                 self.newGameButton.hidden = false
             })
             
             alert.addAction(dismissAction)
-            
             self.presentViewController(alert, animated: true, completion: nil)
             
         }
@@ -70,19 +77,9 @@ class BoardViewController: UIViewController {
             let dismissAction = UIAlertAction(title: "Dismiss", style: .Cancel, handler: { action in
                 self.newGameButton.hidden = false
             })
-            
             alert.addAction(dismissAction)
-            
             self.presentViewController(alert, animated: true, completion: nil)
-
-            
         }
-       
-        
-
-        
-        
-        
     }
     
     @IBAction func logOutUser(sender: AnyObject) {
