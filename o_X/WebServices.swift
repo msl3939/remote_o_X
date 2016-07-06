@@ -1,12 +1,3 @@
-//
-//  WebServices.swift
-//  o_X
-//
-//  Created by Michelle Lee on 7/5/16.
-//  Copyright © 2016 iX. All rights reserved.
-//
-/*
-import Foundation
 import Foundation
 import UIKit
 import Alamofire
@@ -19,13 +10,14 @@ class WebService {
     func createMutableRequest(url:NSURL!,method:String!,parameters:Dictionary<String, String>?) -> Request  {
         
         // build request
-        let headers = ["access-Token":UserController.sharedInstance.getcurrentUsers()!.token, "client": UserController.sharedInstance.getLoggedInUser()!.client, "uid":UserController.sharedInstance.getLoggedInUser()!.email, "token-type":"bearer"]
+        let headers = ["access-Token":UserController.sharedInstance.currentUser!.token, "client": UserController.sharedInstance.currentUser!.client, "uid":UserController.sharedInstance.currentUser!.email, "token-type":"bearer"]
         let request = Alamofire.request(Method(rawValue:method)!, url, parameters: parameters, encoding: .URL, headers: headers)
         
         return request
     }
     
     func createMutableAnonRequest(url:NSURL!,method:String!,parameters:Dictionary<String, String>?) -> Request  {
+        
         
         // build request
         let request = Alamofire.request(.POST, url, parameters: parameters, encoding: .URL)
@@ -36,12 +28,12 @@ class WebService {
     func executeRequest (urlRequest:Request, presentingViewController:UIViewController? = nil, requestCompletionFunction:(Int,JSON) -> ())  {
         
         //add a loading overlay over the presenting view controller, as we are about to wait for a web request
-        presentingViewController?
+        //presentingViewController?.addLoadingOverlay()
         
         urlRequest.responseJSON { returnedData -> Void in  //execute the request and give us JSON response data
             
             //the web service is now done. Remove the loading overlay
-            presentingViewController?
+            //presentingViewController?.removeLoadingOverlay()
             
             //Handle the response from the web service
             let success = returnedData.result.isSuccess
@@ -124,4 +116,4 @@ class WebService {
         return false //returning false indicates that no errors were detected
     }
     
-}*/
+}

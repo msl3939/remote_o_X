@@ -20,7 +20,7 @@ class BoardViewController: UIViewController {
     var networkMode:Bool = false
     
     @IBOutlet weak var boardview: UIView!
-    @IBOutlet weak var newGameButton: UIButton!
+    @IBOutlet weak var newGameButton: UIButton?
     // Create additional IBOutlets here.
     
     override func viewDidLoad() {
@@ -46,12 +46,11 @@ class BoardViewController: UIViewController {
     @IBAction func newgamebuttonpressed (sender: UIButton) {
         print("New game button pressed.")
         restartGame()
-        newGameButton.hidden = true
+        newGameButton?.hidden = true
     }
     
 
     @IBAction func pushButton(sender: UIButton) {
-        var intButton: Int = sender.tag
         OXGameS.sharedInstance.playMove(sender.tag)
         let buttontitle = OXGameS.sharedInstance.getCurrentGame().whoseTurn().rawValue
         sender.setTitle(buttontitle, forState: .Normal)
@@ -62,7 +61,7 @@ class BoardViewController: UIViewController {
         if (gamestate == OXGameState.Won){
             let alert = UIAlertController(title: "Game Over", message: "\(buttontitle) Won", preferredStyle: UIAlertControllerStyle.Alert)
             let dismissAction = UIAlertAction(title: "Dismiss", style: .Cancel, handler: { action in
-                self.newGameButton.hidden = false
+                self.newGameButton?.hidden = false
             })
             
             alert.addAction(dismissAction)
@@ -71,11 +70,9 @@ class BoardViewController: UIViewController {
         }
         else if (gamestate == OXGameState.Tie)
         {
-            print ("hey you tied")
-            
             let alert = UIAlertController(title: "Game Over", message: "You Tied", preferredStyle: UIAlertControllerStyle.Alert)
             let dismissAction = UIAlertAction(title: "Dismiss", style: .Cancel, handler: { action in
-                self.newGameButton.hidden = false
+                self.newGameButton?.hidden = false
             })
             alert.addAction(dismissAction)
             self.presentViewController(alert, animated: true, completion: nil)

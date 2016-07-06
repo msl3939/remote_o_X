@@ -14,7 +14,7 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func loginButtonPressed(sender: UIButton) {
-        UserController.sharedInstance.login(email: emailTextField.text!, password: passwordTextField.text!, onCompletion: {
+        UserController.sharedInstance.login(emailTextField.text!, password: passwordTextField.text!, onCompletion: {
             username, string in
             if username == nil {
                 

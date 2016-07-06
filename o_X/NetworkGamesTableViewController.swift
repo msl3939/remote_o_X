@@ -18,7 +18,7 @@ class NetworkGamesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        OXGameS.sharedInstance.getGames(onCompletion: {games, error in
+        OXGameS.sharedInstance.getGames({games, error in
             if let availGames:[OXGame] = games {
                 self.games = availGames
                 self.tableView.reloadData()
@@ -55,7 +55,7 @@ class NetworkGamesTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellIdentifier", forIndexPath: indexPath)
-        cell.textLabel?.text = String(games[indexPath.row].host)
+        cell.textLabel?.text = String(games[indexPath.row].host) + " (" + String(games[indexPath.row].ID) + ")"
         return cell
     }
     

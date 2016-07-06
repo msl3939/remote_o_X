@@ -16,23 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
-            .responseJSON { response in
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result)   // result of response serialization
-                
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
-                }
-        }
-        
         let defaults = NSUserDefaults.standardUserDefaults()
         if let email:String = defaults.objectForKey("currentUserEmail") as? String {
             if let password:String =
                 defaults.objectForKey("currentUserPassword") as? String {
-                UserController.sharedInstance.register(email: email, password: password, onCompletion: { username, string in
+                UserController.sharedInstance.login(email, password: password, onCompletion: { username, string in
                     if string == nil {
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                         let viewController = storyboard.instantiateInitialViewController()

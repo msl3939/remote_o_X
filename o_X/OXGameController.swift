@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-class OXGameS {
+class OXGameS: WebService {
     static let sharedInstance = OXGameS()
     private var currentGame:OXGame = OXGame()
     
@@ -22,18 +23,30 @@ class OXGameS {
         currentGame.playMove(tag)
     }
     
-    func getGames(onCompletion onCompletion: ([OXGame]?, String?) -> Void) {
+    func getGames(onCompletion: ([OXGame]?, String?) -> Void) {
         
-        let a = OXGame()
-        let b = OXGame()
+        let request = self.createMutableRequest(NSURL(string: "https://ox-backend.herokuapp.com/games"), method: "GET", parameters: nil)
+        self.executeRequest(request, requestCompletionFunction: {(responseCode, json) in
+            print(json)
+            
+            if (responseCode == 200)   {
+                var oxgamelist = [OXGame]()
+                for (index,subJson) in json {
+                    var newOxGame = OXGame()
+                    newOxGame.ID = subJson["id"].intValue
+                    newOxGame.host = subJson["host_user"]["uid"].stringValue
+                    oxgamelist.append(newOxGame)
+                }
+                onCompletion(oxgamelist, nil)
+            }
+            
+            else {
+                let errorMessage = json["errors"]["full_messages"][0].stringValue
+                onCompletion(nil, errorMessage)
+            }
+        })
         
-        a.ID = 1
-        a.host = "Michelle"
-        
-        b.ID = 2
-        b.host = "Enrique"
-        
-        onCompletion([a, b], nil)
+
     }
     
 }

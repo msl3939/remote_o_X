@@ -16,7 +16,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func registerButtonPressed(sender: AnyObject) {
-        UserController.sharedInstance.register(email: emailTextField.text!, password: passwordTextField.text!, onCompletion: {
+        UserController.sharedInstance.register(emailTextField.text!, password: passwordTextField.text!, onCompletion: {
             username, string in
     
             if username == nil {
