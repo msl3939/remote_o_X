@@ -13,6 +13,9 @@ class BoardViewController: UIViewController {
         for subviews in boardview.subviews {
             if let button = subviews as? UIButton {
                 button.setTitle(arrayBoard[button.tag].rawValue, forState: .Normal)
+                if (arrayBoard[button.tag].rawValue != "") {
+                button.enabled = false
+                }
             }
         }
     }
@@ -49,16 +52,30 @@ class BoardViewController: UIViewController {
         newGameButton?.hidden = true
     }
     
-
     @IBAction func pushButton(sender: UIButton) {
         OXGameS.sharedInstance.playMove(sender.tag)
         let buttontitle = OXGameS.sharedInstance.getCurrentGame().whoseTurn().rawValue
         sender.setTitle(buttontitle, forState: .Normal)
         sender.enabled = false
-        
-        
+        if networkMode == true {
+            OXGameS.sharedInstance.makeMove(OXGameS.sharedInstance.getCurrentGame().ID, onCompletion: {
+            string in
+            if string == nil {
+                print("success")
+            }
+            else {
+                let alert = UIAlertController(title: "Error", message: string, preferredStyle: UIAlertControllerStyle.Alert)
+                let dismissAction = UIAlertAction(title: "Dismiss", style: .Cancel, handler: { action in
+                    self.newGameButton?.hidden = false
+                })
+                alert.addAction(dismissAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+                }
+            })
+        }
+    
         let gamestate = OXGameS.sharedInstance.getCurrentGame().state()
-        if (gamestate == OXGameState.Won){
+        if (gamestate == OXGameState.Won) {
             let alert = UIAlertController(title: "Game Over", message: "\(buttontitle) Won", preferredStyle: UIAlertControllerStyle.Alert)
             let dismissAction = UIAlertAction(title: "Dismiss", style: .Cancel, handler: { action in
                 self.newGameButton?.hidden = false
@@ -79,6 +96,21 @@ class BoardViewController: UIViewController {
         }
     }
     
+    @IBAction func refreshButton(sender: UIBarButtonItem) {
+        OXGameS.sharedInstance.refreshGame(OXGameS.sharedInstance.getCurrentGame().ID, onCompletion: {
+            string in
+            if string == nil {
+                self.updateUI()
+                OXGameS.sharedInstance.getCurrentGame().whoseTurn().rawValue
+            }
+            else {
+                print("failure")
+            }
+        })
+    }
+    
+    
+    
     @IBAction func logOutUser(sender: AnyObject) {
         print("You have logged out")
         let storyboard = UIStoryboard(name: "OnboardingStoryboard", bundle: nil)
@@ -89,6 +121,6 @@ class BoardViewController: UIViewController {
     }
 }
 
-var gameObject:OXGame = OXGame()
 
+var gameObject:OXGame = OXGame()
 

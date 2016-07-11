@@ -9,7 +9,7 @@
 import Foundation
 
 
-class User {
+class User: NSObject {
     var email:String = ""
     var password:String = ""
     var token:String = ""

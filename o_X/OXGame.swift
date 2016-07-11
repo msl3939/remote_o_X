@@ -75,6 +75,7 @@ class OXGame {
     }
     
     func whoseTurn() -> CellType {
+        
         if (self.startType == CellType.X) {
             self.startType = CellType.O
             return CellType.X

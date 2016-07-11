@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYS-nX-Y2P">
-                                <rect key="frame" x="277" y="165" width="46" height="30"/>
+                                <rect key="frame" x="277" y="270" width="46" height="30"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -27,34 +27,58 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoH-o4-ewc">
-                                <rect key="frame" x="277" y="308" width="46" height="30"/>
+                                <rect key="frame" x="277" y="325" width="46" height="30"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <segue destination="Bo1-c4-pli" kind="show" id="L0e-6i-IIf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naughts &amp; Crosses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAf-Yt-8dy">
+                                <rect key="frame" x="194" y="154" width="213" height="33"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99278479809999998" green="0.9959403872" blue="0.99582940340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nYS-nX-Y2P" firstAttribute="centerY" secondItem="wuO-J9-nOR" secondAttribute="centerY" constant="-100" id="387-2Z-qwT"/>
                             <constraint firstItem="nYS-nX-Y2P" firstAttribute="centerY" secondItem="wuO-J9-nOR" secondAttribute="centerY" constant="-50" id="4wm-42-mga"/>
                             <constraint firstItem="FoH-o4-ewc" firstAttribute="centerX" secondItem="wuO-J9-nOR" secondAttribute="centerX" id="6Rk-OO-mgr"/>
+                            <constraint firstItem="ViN-cQ-rDa" firstAttribute="top" secondItem="nYS-nX-Y2P" secondAttribute="bottom" constant="300" id="BIl-1H-e79"/>
                             <constraint firstItem="FoH-o4-ewc" firstAttribute="centerY" secondItem="wuO-J9-nOR" secondAttribute="centerY" constant="50" id="L4G-64-3BX"/>
+                            <constraint firstItem="nYS-nX-Y2P" firstAttribute="leading" secondItem="wuO-J9-nOR" secondAttribute="leading" constant="277" id="NYU-45-xLe"/>
+                            <constraint firstAttribute="trailing" secondItem="DAf-Yt-8dy" secondAttribute="trailing" constant="223" id="NnJ-d2-0hq"/>
+                            <constraint firstItem="DAf-Yt-8dy" firstAttribute="centerX" secondItem="wuO-J9-nOR" secondAttribute="centerX" id="Qlf-Qf-3St"/>
                             <constraint firstItem="FoH-o4-ewc" firstAttribute="centerX" secondItem="wuO-J9-nOR" secondAttribute="centerX" id="R4d-Ju-t3h"/>
                             <constraint firstItem="nYS-nX-Y2P" firstAttribute="centerX" secondItem="wuO-J9-nOR" secondAttribute="centerX" id="XAq-sU-Jdt"/>
+                            <constraint firstAttribute="trailing" secondItem="FoH-o4-ewc" secondAttribute="trailing" constant="277" id="XxX-S7-4S4"/>
                             <constraint firstItem="nYS-nX-Y2P" firstAttribute="centerX" secondItem="wuO-J9-nOR" secondAttribute="centerX" id="YSA-g5-ajM"/>
                             <constraint firstItem="FoH-o4-ewc" firstAttribute="centerY" secondItem="wuO-J9-nOR" secondAttribute="centerY" id="aq4-pD-9Xl"/>
+                            <constraint firstItem="FoH-o4-ewc" firstAttribute="top" secondItem="nYS-nX-Y2P" secondAttribute="bottom" constant="113" id="cIb-Vp-rQf"/>
+                            <constraint firstItem="ViN-cQ-rDa" firstAttribute="top" secondItem="FoH-o4-ewc" secondAttribute="bottom" constant="245" id="fhP-JQ-66o"/>
+                            <constraint firstAttribute="trailing" secondItem="nYS-nX-Y2P" secondAttribute="trailing" constant="277" id="ir2-GB-KRh"/>
+                            <constraint firstItem="FoH-o4-ewc" firstAttribute="leading" secondItem="wuO-J9-nOR" secondAttribute="leading" constant="277" id="o3g-0P-WZ1"/>
+                            <constraint firstItem="DAf-Yt-8dy" firstAttribute="top" secondItem="Cuk-lW-xL3" secondAttribute="bottom" constant="90" id="oa5-z0-DAG"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="NnJ-d2-0hq"/>
                                 <exclude reference="387-2Z-qwT"/>
                                 <exclude reference="4wm-42-mga"/>
+                                <exclude reference="NYU-45-xLe"/>
                                 <exclude reference="XAq-sU-Jdt"/>
                                 <exclude reference="YSA-g5-ajM"/>
+                                <exclude reference="ir2-GB-KRh"/>
                                 <exclude reference="6Rk-OO-mgr"/>
                                 <exclude reference="L4G-64-3BX"/>
                                 <exclude reference="R4d-Ju-t3h"/>
+                                <exclude reference="XxX-S7-4S4"/>
                                 <exclude reference="aq4-pD-9Xl"/>
+                                <exclude reference="cIb-Vp-rQf"/>
+                                <exclude reference="o3g-0P-WZ1"/>
+                                <exclude reference="BIl-1H-e79"/>
+                                <exclude reference="fhP-JQ-66o"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">

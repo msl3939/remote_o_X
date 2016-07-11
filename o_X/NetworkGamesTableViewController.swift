@@ -15,6 +15,15 @@ class NetworkGamesTableViewController: UITableViewController {
             print("pressed")
     }
     
+    @IBAction func newGameButton(sender: AnyObject) {
+        OXGameS.sharedInstance.createNewGame { game, message in if (message == nil) {
+            self.performSegueWithIdentifier("networkSegue", sender: nil)
+            }
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -60,7 +69,14 @@ class NetworkGamesTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("networkSegue", sender: indexPath)
+        OXGameS.sharedInstance.joinGame(games[indexPath.row].ID) {game, message in
+            if message == nil {
+                self.performSegueWithIdentifier("networkSegue", sender: indexPath)
+            }
+            else {
+                print("didn't work")
+            }
+        }
     }
     
     

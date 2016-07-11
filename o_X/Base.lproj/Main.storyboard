@@ -28,7 +28,7 @@
                                         <rect key="frame" x="350" y="0.0" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="2">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -42,7 +42,7 @@
                                         <rect key="frame" x="175" y="175" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="4">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -56,7 +56,7 @@
                                         <rect key="frame" x="350" y="175" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="5">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -70,7 +70,7 @@
                                         <rect key="frame" x="0.0" y="350" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="6">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -84,7 +84,7 @@
                                         <rect key="frame" x="175" y="350" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="7">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -98,7 +98,7 @@
                                         <rect key="frame" x="350" y="350" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="8">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -112,7 +112,7 @@
                                         <rect key="frame" x="175" y="0.0" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="1">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -126,7 +126,7 @@
                                         <rect key="frame" x="0.0" y="175" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="3">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -140,7 +140,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="0">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -359,7 +359,11 @@
                                 <action selector="backbutton:" destination="WDd-H3-cXY" id="Eg5-gf-NtI"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Yzz-m7-C0s"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Yzz-m7-C0s">
+                            <connections>
+                                <action selector="newGameButton:" destination="WDd-H3-cXY" id="wdb-UN-YPv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -386,7 +390,7 @@
             </objects>
             <point key="canvasLocation" x="768" y="270"/>
         </scene>
-        <!--Board View Controller-->
+        <!--Networked Game-->
         <scene sceneID="dTG-yD-KJ1">
             <objects>
                 <viewController id="ViC-8P-fJe" customClass="BoardViewController" customModule="o_X" customModuleProvider="target" sceneMemberID="viewController">
@@ -405,7 +409,7 @@
                                         <rect key="frame" x="350" y="0.0" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011709999998" green="0.8811486959" blue="0.96563488249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="2">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -419,7 +423,7 @@
                                         <rect key="frame" x="175" y="175" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011709999998" green="0.8811486959" blue="0.96563488249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="4">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -433,7 +437,7 @@
                                         <rect key="frame" x="350" y="175" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011709999998" green="0.8811486959" blue="0.96563488249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="5">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -447,7 +451,7 @@
                                         <rect key="frame" x="0.0" y="350" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011709999998" green="0.8811486959" blue="0.96563488249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="6">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -461,7 +465,7 @@
                                         <rect key="frame" x="175" y="350" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011709999998" green="0.8811486959" blue="0.96563488249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="7">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -475,7 +479,7 @@
                                         <rect key="frame" x="350" y="350" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011709999998" green="0.8811486959" blue="0.96563488249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="8">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -489,7 +493,7 @@
                                         <rect key="frame" x="175" y="0.0" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011709999998" green="0.8811486959" blue="0.96563488249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="1">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -503,7 +507,7 @@
                                         <rect key="frame" x="0.0" y="175" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011709999998" green="0.8811486959" blue="0.96563488249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="3">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -517,7 +521,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.87118011709999998" green="0.8811486959" blue="0.96563488249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="0">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
@@ -596,21 +600,6 @@
                             </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f04-4F-8l0">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <items>
-                                    <navigationItem id="Ebj-kW-QKp">
-                                        <nil key="title"/>
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="CpR-bc-bkU">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fdf-E7-739">
-                                                <rect key="frame" x="20" y="7" width="133" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Leave Game"/>
-                                                <connections>
-                                                    <action selector="logOutUser:" destination="ViC-8P-fJe" eventType="touchUpInside" id="ugu-H1-TP1"/>
-                                                </connections>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.87118011709999998" green="0.8811486959" blue="0.96563488249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -675,6 +664,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Networked Game" id="CYE-AQ-XpT">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="bYI-FF-CvF">
+                            <connections>
+                                <action selector="refreshButton:" destination="ViC-8P-fJe" id="fIq-9w-csh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="boardview" destination="wVn-Ns-wYW" id="WMU-Bd-bNb"/>
                     </connections>
@@ -684,4 +681,15 @@
             <point key="canvasLocation" x="1162" y="953"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="0" width="360" height="360"/>
+        <image name="1" width="360" height="363"/>
+        <image name="2" width="360" height="360"/>
+        <image name="3" width="369" height="363"/>
+        <image name="4" width="355" height="355"/>
+        <image name="5" width="362" height="357"/>
+        <image name="6" width="371" height="360"/>
+        <image name="7" width="354" height="354"/>
+        <image name="8" width="355" height="355"/>
+    </resources>
 </document>
